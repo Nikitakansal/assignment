@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Registration() {
   const navigate = useNavigate();
@@ -168,9 +168,9 @@ function Registration() {
           >
             ADD PATIENT
           </button>
-          <button type="button" className="btn btn-outline-danger">
+          <Link to="/"><button type="button" className="btn btn-outline-danger">
             CANCEL
-          </button>
+          </button></Link>
         </div>
       </form>
     </div>
